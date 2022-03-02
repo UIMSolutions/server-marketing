@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/server-marketing
+server-marketing.so
+server-marketing.dylib
+server-marketing.dll
+server-marketing.a
+server-marketing.lib
+server-marketing-test-*
+*.exe
+*.o
+*.obj
+*.lst
