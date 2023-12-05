@@ -80,9 +80,7 @@ router // Pages
 	}}}
 
 	debug writeln("database.tenantNames -> ", database.tenantNames);
-	foreach(tenant; database.tenantNames) {
-		debug writeln(tenant, " with ", database[tenant].collectionNames);
-	}
+	database.tenantNames.each!(tenantName => debug writeln(tenantName, " with ", database[tenantName].collectionNames));
 
 	debug writeln("servermarketing.database(database)");
   servermarketing.database(database);
